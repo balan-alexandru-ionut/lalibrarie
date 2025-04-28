@@ -1,6 +1,5 @@
 <script setup lang="ts">
-
-import DockComponent from "@/components/navigation/DockComponent.vue";
+import DockComponent from '@/components/navigation/DockComponent.vue'
 </script>
 
 <template>
@@ -12,7 +11,3 @@ import DockComponent from "@/components/navigation/DockComponent.vue";
     <DockComponent />
   </footer>
 </template>
-
-<style scoped>
-
-</style>
