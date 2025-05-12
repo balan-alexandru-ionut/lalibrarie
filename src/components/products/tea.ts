@@ -16,7 +16,6 @@ export enum TeaCategory {
 
 export class Tea extends Product {
   public description: string
-  public ingredients?: string[]
   public category: TeaCategory
   public brewTime: number
 
@@ -28,7 +27,7 @@ export class Tea extends Product {
     category: TeaCategory,
     brewTime: number,
   ) {
-    super(name, quantity, price)
+    super(name, price, quantity)
     this.description = description
     this.category = category
     this.brewTime = brewTime
@@ -38,17 +37,6 @@ export class Tea extends Product {
     this.brewTime = brewTime
     return this
   }
-
-  public withQuantity(quantity: Quantity): this {
-    this.quantity = quantity
-    return this
-  }
-
-  public withIngredients(...ingredients: string[]): this {
-    this.ingredients = ingredients
-    return this
-  }
-
   public static baseTea(
     name: string,
     description: string,
