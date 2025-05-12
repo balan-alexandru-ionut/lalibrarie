@@ -44,7 +44,7 @@ import {
   DEHYDRATED_STRAWBERRY,
   DRIED_BLACKBERRY,
   DRIED_CRANBERRY,
-  DRIED_RASPBERRY,
+  DRIED_RASPBERRY, DRIED_RED_CURRANTS,
   DRIED_STRAWBERRY,
   ELDER,
   ELDER_PIECES,
@@ -54,7 +54,7 @@ import {
   FROZEN_SOUR_CHERRIES,
   FROZEN_STRAWBERRY_SLICES,
   GINGER,
-  GINGER_ROOTS,
+  GINGER_ROOTS, GOOSEBERRIES,
   GRAPES,
   GREEN_ROOIBOS,
   GREEN_TEA,
@@ -65,14 +65,14 @@ import {
   INVERTED_SUGAR,
   JASMINE,
   JASMINE_BUDS,
-  JUNIPER,
+  JUNIPER, KIWI_PIECES,
   KOMBUCHA_POWDER,
   LAVENDER,
   LEMON_BALM,
   LEMON_FLAVOR,
   LEMON_GRASS,
   LEMON_MIRTH,
-  LEMON_PEEL,
+  LEMON_PEEL, LIONS_FOOT,
   LUNG_CHING,
   LYCHEE,
   MACE,
@@ -116,7 +116,7 @@ import {
   SAGE_LEAVES,
   SARSAPARILLA_ROOTS,
   SILVER_LINDEN_FLOWERS,
-  SMASHED_HAZELNUTS,
+  SMASHED_HAZELNUTS, STRAWBERRY,
   STRAWBERRY_LEAVES,
   SUGAR,
   SUGAR_CUBES,
@@ -130,12 +130,12 @@ import {
   VANILLA_COCOA,
   VANILLA_FLAVOR,
   VANILLA_PIECES,
-  VERBENA_LEAVES,
+  VERBENA_LEAVES, WATERMELON, WATERMELON_FLAKES,
   WHITE_CHOCOLATE,
   WHITE_TEA,
   WILD_STRAWBERRY_LEAVES,
   YELLOW_MELON_PIECES,
-  YUNNAN,
+  YUNNAN
 } from '@/components/products/data/ingredients.ts'
 
 export const blackIndianTeas: Tea[] = [
@@ -794,6 +794,26 @@ export const fruitTeas: Tea[] = [
     DRIED_RASPBERRY,
     DRIED_STRAWBERRY,
   ),
+  Tea.fruitTea(
+    'Merry Berry',
+    'Culoarea bogată este dată de diversele ingrediente cum ar fi fructele uscate în aer liber, diferite fructe de pădure și fructe uscate prin congelare. Compoziția de arome puternice de fructe în combinație cu gustul dulce al budincii de vanilie creează o experiență extraordinară mai rar întâlnită.',
+    14
+  ).withIngredients(APPLE_PIECES, ELDER, HIBISCUS_FLOWERS, BLACK_CURRANTS, PAPAYA_PIECES, MACE, FLAVORS, DRIED_RED_CURRANTS, SUNFLOWER, STRAWBERRY, GOOSEBERRIES, MAIZE_FLOWERS, BLUEBERRIES),
+  Tea.fruitTea(
+    'Watermelon Mint',
+    'O mult iubită combinație proaspătă și revitalizantă, datorită gustului de mentă de o calitate excepțională, care i se adaugă fulgi și cuburi de pepene roșu. O adevărată plăcere servit și rece, în zilele toride de vară!',
+    14
+  ).withIngredients(APPLE_PIECES, WATERMELON, HIBISCUS_FLOWERS, MINT, FLAVORS, WATERMELON_FLAKES, MACE_PEEL),
+  Tea.fruitTea(
+    'Blue Pomegranate',
+    'Mult iubita rodie este pusă în evidență în acest amestec, alături de delicioasa afină. Delicata combinație vă va răsfăța papilele gustative cu un gust fructal, albastrul regal al florii de colț și floarea de nalbă aducând un plus acestui ceai minunat de privit.',
+    15
+  ).withIngredients(APPLE_PIECES, ELDER, HIBISCUS_FLOWERS, APPLE_PIECES + " confiat", POMEGRANATE_SEEDS, MACE_PEEL, FLAVORS, LIONS_FOOT, MALLOW),
+  Tea.fruitTea(
+    'Golden Kiwi',
+    '"Simte-te radiant, asa cum ar trebui!" este motto-ul acestui ceai dulce, copt la soare. Aceastǎ creație, cu a sa culoare aurie, vă invită să vă reîncărcați bateriile după o zi încărcată. Dulceața bucǎților de ananas se îmbină perfect cu gustul revigorant și acru al kiwi-ului.',
+    15
+  ).withIngredients(APPLE_PIECES, PINEAPPLE_PIECES, APPLE_PIECES + " acru", KIWI_PIECES + " confiat", SAFFRON)
 ]
 
 export const teas = [

@@ -74,6 +74,12 @@ export const ELDER_PIECES = 'boabe de soc'
 export const DRIED_BLACKBERRY = 'bucǎți de mure uscate'
 export const FROZEN_SOUR_CHERRIES = 'bucǎți de cireșe amare uscate și congelate'
 export const BLUEBERRIES = 'afine'
+export const DRIED_RED_CURRANTS = 'coacǎze roșii uscate și congelate'
+export const GOOSEBERRIES = 'agrișe'
+export const STRAWBERRY = 'cǎpșuni'
+export const WATERMELON = 'bucǎți de pepene roșu'
+export const WATERMELON_FLAKES = 'fulgi de pepene roșu'
+export const KIWI_PIECES = 'bucǎți de kiwi'
 
 // Sweets
 export const VANILLA_PIECES = 'bucățele de vanilie'
@@ -114,6 +120,7 @@ export const CHAMOMILE_FLOWERS = 'flori de mușețel'
 export const HIBISCUS_FLOWERS = 'flori de hibiscus'
 export const MAIZE_FLOWERS = 'flori de porumb'
 export const SUNFLOWER = 'flori de floarea-soarelui'
+export const LIONS_FOOT = 'floare de colț'
 
 // Plants
 export const CHAMOMILE = 'mușețel'
