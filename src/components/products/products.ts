@@ -19,5 +19,6 @@ export class Product {
 export type Quantity = {
   minimum: number
   maximum?: number
-  unit: 'ml' | 'l' | 'g'
+  unit: 'ml' | 'l' | 'g' | 'pungǎ' | 'buc' | 'felii'
+  maximumUnit?: 'ml' | 'l' | 'g' | 'pungǎ' | 'buc' | 'felii'
 }
