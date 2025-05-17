@@ -3,7 +3,7 @@ import DockComponent from '@/components/navigation/DockComponent.vue'
 </script>
 
 <template>
-  <main class="m-4">
+  <main>
     <RouterView />
   </main>
 

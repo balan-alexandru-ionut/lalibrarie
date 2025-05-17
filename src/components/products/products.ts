@@ -1,8 +1,8 @@
 export class Product {
-  protected name: string
-  protected quantity?: Quantity
-  protected price: number
-  protected ingredients?: string[]
+  public name: string
+  public quantity?: Quantity
+  public price: number
+  public ingredients?: string[]
 
   constructor(name: string, price: number, quantity?: Quantity) {
     this.name = name
