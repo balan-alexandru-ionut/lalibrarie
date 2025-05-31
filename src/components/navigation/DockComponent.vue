@@ -38,7 +38,7 @@ function navigateToRoute(routeName: string) {
 </script>
 
 <template>
-  <div class="dock dock-lg">
+  <div class="dock">
     <button
       v-for="menuItem in menuItems"
       :key="menuItem.title"

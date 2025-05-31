@@ -13,8 +13,7 @@ const isActive = computed(() => props.active)
 
 <template>
   <div
-    class="flex flex-col justify-center w-32 gap-1 items-center p-2"
-    :class="{ 'border-b-2': isActive, 'border-accent': isActive }"
+    class="flex flex-col justify-center w-28 gap-1 items-center p-1"
   >
     <div
       class="w-16 h-16 flex items-center justify-center rounded-xl"
@@ -22,7 +21,7 @@ const isActive = computed(() => props.active)
     >
       <font-awesome-icon :icon="['fas', props.icon]" size="xl" class="text-white" />
     </div>
-    <span class="text-center font-medium">{{ props.title }}</span>
+    <span class="text-center font-medium" :class="{ 'border-b-2': isActive, 'border-accent': isActive }">{{ props.title }}</span>
   </div>
 </template>
 

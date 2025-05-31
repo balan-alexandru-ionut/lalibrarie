@@ -10,6 +10,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { ref } from 'vue'
 
+const emit = defineEmits(['category-changed'])
+
 const categories = ref([
   {
     title: 'Ceaiuri',
@@ -56,11 +58,12 @@ function toggleActive(index: number) {
   categories.value[activeIndex].active = false
   categories.value[index].active = true
   activeIndex = index
+  emit('category-changed', index)
 }
 </script>
 
 <template>
-  <div class="bg-amber-50 p-6 m-2 rounded-box overflow-hidden">
+  <div class="bg-amber-50 p-4 m-2 rounded-box overflow-hidden sticky top-0 z-50">
     <span class="text-2xl">Produse</span>
     <div class="grid grid-flow-col auto-cols-max overflow-x-auto snap-x gap-2 p-4 no-scrollbars">
       <div class="snap-start" v-for="(category, index) in categories" :key="category.title">

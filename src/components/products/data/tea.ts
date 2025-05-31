@@ -862,15 +862,15 @@ export const fruitTeas: Tea[] = [
 ]
 
 export const teas = [
-  ...blackIndianTeas,
-  ...blackChinaTeas,
-  ...blackAromaticTeas,
-  ...fermentedTeas,
-  ...greenWhiteMixedTeas,
-  ...greenTeas,
-  ...redTeas,
-  ...latinTeas,
-  ...herbalTeas,
-  ...ayurvedicTeas,
-  ...fruitTeas,
+  blackIndianTeas,
+  blackChinaTeas,
+  blackAromaticTeas,
+  fermentedTeas,
+  greenWhiteMixedTeas,
+  greenTeas,
+  redTeas,
+  latinTeas,
+  herbalTeas,
+  ayurvedicTeas,
+  fruitTeas,
 ]
