@@ -244,3 +244,11 @@ export const hotChocolate: Coffee[] = [
     'fructe de pǎdure, zmeurǎ, fructul pasiunii',
   ),
 ]
+
+export const coffeesPerCategory = new Map<string, Array<Coffee>>(
+  [
+    ['Cafea', coffees],
+    ['Cafea Gourmet', gourmetCoffees],
+    ['Ciocolatǎ Caldǎ', hotChocolate],
+  ]
+)

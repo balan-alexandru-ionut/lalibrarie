@@ -63,7 +63,7 @@ function toggleActive(index: number) {
 </script>
 
 <template>
-  <div class="bg-amber-50 p-4 m-2 rounded-box overflow-hidden sticky top-0 z-50">
+  <div class="bg-amber-50 p-4 rounded-box overflow-hidden">
     <span class="text-2xl">Produse</span>
     <div class="grid grid-flow-col auto-cols-max overflow-x-auto snap-x gap-2 p-4 no-scrollbars">
       <div class="snap-start" v-for="(category, index) in categories" :key="category.title">

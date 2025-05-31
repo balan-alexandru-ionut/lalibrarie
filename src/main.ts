@@ -15,7 +15,7 @@ import {
   faMugSaucer,
   faWineGlass,
   faChevronUp,
-  faChevronDown
+  faChevronDown, faSearch
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -31,6 +31,7 @@ library.add(
   faCookieBite,
   faChevronUp,
   faChevronDown,
+  faSearch
 )
 
 const app = createApp(App).component('font-awesome-icon', FontAwesomeIcon)
