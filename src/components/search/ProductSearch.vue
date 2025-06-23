@@ -25,7 +25,7 @@ function filter(searchTerm: string) {
   const term = standardize(searchTerm)
   const filteredProducts = new Map<string, Array<Product>>()
 
-  if(term.length === 0) {
+  if (term.length === 0) {
     emit('filter', null)
   }
 
@@ -54,9 +54,17 @@ function filter(searchTerm: string) {
 </script>
 
 <template>
-  <label class="input input-lg mx-auto w-10/11 -mt-4 rounded-box shadow-md bg-amber-50 focus:border-0 outline-0" for="search">
+  <label
+    class="input input-lg mx-auto w-10/11 -mt-4 rounded-box shadow-md bg-amber-50 focus:border-0 outline-0"
+    for="search"
+  >
     <font-awesome-icon :icon="['fas', faSearch.iconName]"></font-awesome-icon>
-    <input @input="e => filter((e.target as HTMLInputElement).value)" id="search" type="search" placeholder="Search" />
+    <input
+      @input="(e) => filter((e.target as HTMLInputElement).value)"
+      id="search"
+      type="search"
+      placeholder="Cautǎ"
+    />
   </label>
 </template>
 

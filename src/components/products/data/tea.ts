@@ -877,6 +877,6 @@ export const teas = [
 
 export const teasPerCategory = () => {
   const map = new Map<string, Array<Tea>>()
-  teas.forEach(teaList => map.set(teaList[0].category, teaList))
+  teas.forEach((teaList) => map.set(teaList[0].category, teaList))
   return map
 }

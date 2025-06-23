@@ -59,9 +59,8 @@ const isExpanded = (teaName: string) => {
             >{{ product.quantity?.maximum }} {{ product.quantity?.unit }}</span
           >
           <span v-else class="text-xs"
-            >{{ product.quantity?.minimum }} {{ product.quantity?.unit }} / {{
-              product.quantity?.maximum
-            }}
+            >{{ product.quantity?.minimum }} {{ product.quantity?.unit }} /
+            {{ product.quantity?.maximum }}
             {{ product.quantity.maximumUnit }}
           </span>
         </h4>

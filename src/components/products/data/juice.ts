@@ -59,15 +59,9 @@ export const sodas: Product[] = [
   }),
 ]
 
-export const juicesPerCategory = new Map<string, Array<Product>>(
-  [
-    ['Sucuri din Fructe Stoarse', freshPressedJuice],
-    ['Smoothie', smoothies],
-  ]
-)
+export const juicesPerCategory = new Map<string, Array<Product>>([
+  ['Sucuri din Fructe Stoarse', freshPressedJuice],
+  ['Smoothie', smoothies],
+])
 
-export const sodasPerCategory = new Map<string, Array<Product>>(
-  [
-    ['Rǎcoritoare', sodas]
-  ]
-)
+export const sodasPerCategory = new Map<string, Array<Product>>([['Rǎcoritoare', sodas]])

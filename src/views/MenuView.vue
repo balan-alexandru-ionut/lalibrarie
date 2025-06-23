@@ -42,7 +42,7 @@ function changeCategory(index: number) {
 function scrollToTop() {
   window.scrollTo({
     behavior: 'smooth',
-    top: 0
+    top: 0,
   })
 }
 
@@ -63,19 +63,36 @@ function filter(filterResults: Map<string, Array<Product>>) {
   <h1 class="text-center text-4xl my-5">Meniu</h1>
   <div class="sticky top-0 z-50 flex flex-col gap-1 pb-4 bg-base-100">
     <MenuCategories @category-changed="(index: number) => changeCategory(index)" />
-    <ProductSearch :products-by-category="searchableProducts" @filter="filterResult => filter(filterResult)" />
+    <ProductSearch
+      :products-by-category="searchableProducts"
+      @filter="(filterResult) => filter(filterResult)"
+    />
   </div>
-  <ProductList v-if="productCategory === 0"
-               :products-per-category="isFiltered ? filteredProducts : teasPerCategory()" />
-  <ProductList v-if="productCategory === 1"
-               :products-per-category="isFiltered ? filteredProducts : coffeesPerCategory" />
-  <ProductList v-if="productCategory === 2"
-               :products-per-category="isFiltered ? filteredProducts : juicesPerCategory" />
-  <ProductList v-if="productCategory === 3" :products-per-category="isFiltered ? filteredProducts : sodasPerCategory" />
-  <ProductList v-if="productCategory === 4" :products-per-category="isFiltered ? filteredProducts : drinksPerCategory"
-               :category-sub-headings="categorySubHeading" />
-  <ProductList v-if="productCategory === 5"
-               :products-per-category="isFiltered ? filteredProducts : snacksPerCategory" />
+  <ProductList
+    v-if="productCategory === 0"
+    :products-per-category="isFiltered ? filteredProducts : teasPerCategory()"
+  />
+  <ProductList
+    v-if="productCategory === 1"
+    :products-per-category="isFiltered ? filteredProducts : coffeesPerCategory"
+  />
+  <ProductList
+    v-if="productCategory === 2"
+    :products-per-category="isFiltered ? filteredProducts : juicesPerCategory"
+  />
+  <ProductList
+    v-if="productCategory === 3"
+    :products-per-category="isFiltered ? filteredProducts : sodasPerCategory"
+  />
+  <ProductList
+    v-if="productCategory === 4"
+    :products-per-category="isFiltered ? filteredProducts : drinksPerCategory"
+    :category-sub-headings="categorySubHeading"
+  />
+  <ProductList
+    v-if="productCategory === 5"
+    :products-per-category="isFiltered ? filteredProducts : snacksPerCategory"
+  />
 </template>
 
 <style scoped></style>

@@ -193,32 +193,31 @@ export const bagInBoxWine: Product[] = [
   }),
 ]
 
-export const drinksPerCategory = new Map<string, Array<Product>>(
-  [
-    ['Cocktails', cocktails],
-    ['Bourbon', bourbons],
-    ['Scotch Whisky', whiskey],
-    ['DeLuxe Scotch Whisky', deluxeWhiskey],
-    ['Whisky Cream & Liqueur', liqueur],
-    ['Cognac', cognac],
-    ['Vodka', vodka],
-    ['Tequila', tequila],
-    ['Rum', rum],
-    ['Gin', gin],
-    ['Digestiv', digestives],
-    ['Bitter & Vermouth', bitters],
-    ['Bere', beers],
-    ['Bere fǎrǎ alcool', nonAlcoholicBeer],
-    ['Cidru', cider],
-    ['Vin la sticlǎ', bottledWine],
-    ['Vin fiert - Casa Panciu Demisec', mulledWine],
-    ['Vin Bag in Box - Casa Panciu', bagInBoxWine],
-  ]
-)
+export const drinksPerCategory = new Map<string, Array<Product>>([
+  ['Cocktails', cocktails],
+  ['Bourbon', bourbons],
+  ['Scotch Whisky', whiskey],
+  ['DeLuxe Scotch Whisky', deluxeWhiskey],
+  ['Whisky Cream & Liqueur', liqueur],
+  ['Cognac', cognac],
+  ['Vodka', vodka],
+  ['Tequila', tequila],
+  ['Rum', rum],
+  ['Gin', gin],
+  ['Digestiv', digestives],
+  ['Bitter & Vermouth', bitters],
+  ['Bere', beers],
+  ['Bere fǎrǎ alcool', nonAlcoholicBeer],
+  ['Cidru', cider],
+  ['Vin la sticlǎ', bottledWine],
+  ['Vin fiert - Casa Panciu Demisec', mulledWine],
+  ['Vin Bag in Box - Casa Panciu', bagInBoxWine],
+])
 
-export const categorySubHeading = new Map<string, string>(
+export const categorySubHeading = new Map<string, string>([
   [
-    ['Vin fiert - Casa Panciu Demisec', "(cu anason, cardamom, cuișoare, scorțișoarǎ, mǎr, portocale)"],
-    ['Vin Bag in Box - Casa Panciu', "(vin alb/demisec, rosé/demisec, roșu/demisec)"]
-  ]
-)
+    'Vin fiert - Casa Panciu Demisec',
+    '(cu anason, cardamom, cuișoare, scorțișoarǎ, mǎr, portocale)',
+  ],
+  ['Vin Bag in Box - Casa Panciu', '(vin alb/demisec, rosé/demisec, roșu/demisec)'],
+])

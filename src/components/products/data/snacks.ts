@@ -59,10 +59,8 @@ export const sweets: Product[] = [
   }),
 ]
 
-export const snacksPerCategory = new Map<string, Array<Product>>(
-  [
-    ['Gustare', snacks],
-    ['Ronțǎieli', crunchies],
-    ['Ceva Dulce', sweets],
-  ]
-)
+export const snacksPerCategory = new Map<string, Array<Product>>([
+  ['Gustare', snacks],
+  ['Ronțǎieli', crunchies],
+  ['Ceva Dulce', sweets],
+])
